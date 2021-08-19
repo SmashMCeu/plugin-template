@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>eu.smashmc</groupId>
 			<artifactId>smash-api</artifactId>
-			<version>1.3</version>
+			<version>1.4</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
