@@ -28,7 +28,7 @@
 			<groupId>eu.smashmc</groupId>
 			<artifactId>smash-api</artifactId>
 			<version>1.4</version>
-			<scope>compile</scope>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc</groupId>
