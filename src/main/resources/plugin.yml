@@ -3,4 +3,4 @@ name: ${project.name}
 version: ${project.version}
 description: ${project.description}
 author: SmashMc
-softdepend: [smashlib]
+softdepend: [SmashCore]
