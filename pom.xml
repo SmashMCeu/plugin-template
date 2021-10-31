@@ -83,13 +83,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.junit.platform</groupId>
-						<artifactId>junit-platform-surefire-provider</artifactId>
-						<version>1.3.2</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 		<!-- Process plugin.yml in build -->
