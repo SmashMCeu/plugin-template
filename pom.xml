@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.smashmc</groupId>
 	<artifactId>example-plugin</artifactId>
-	<name>ExamplePlugin</name>
+	<name>Example</name>
 	<description>An example plugin for SmashMc.</description>
 	<version>1.0.0</version>
 
