@@ -21,6 +21,9 @@ steps:
 
   - name: Upload to Mario
     image: appleboy/drone-scp
+    environment:
+      DRONE_COMMIT:
+        from_secret: drone_commit
     settings:
       host: mario.smashmc.eu
       username:
