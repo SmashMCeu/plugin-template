@@ -10,5 +10,4 @@ public class ExamplePlugin extends JavaPlugin {
 		Bukkit.broadcastMessage("Hello world");
 		super.onEnable();
 	}
-
 }
