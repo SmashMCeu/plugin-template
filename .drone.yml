@@ -46,7 +46,7 @@ steps:
         from_secret: mario_key
       port: 22334
       script:
-        - cp -rf /tmp/cicd/$DRONE_COMMIT/target/* /global-server-template/plugins
+        - cp -rf /tmp/cicd/$DRONE_COMMIT/target/* /global-server-template/plugins/
     when:
       branch:
         - main
