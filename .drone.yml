@@ -1,0 +1,54 @@
+kind: pipeline
+type: docker
+name: cicd
+
+steps:
+  - name: Setup Maven
+    image: alpine:latest
+    environment:
+      REPO_ID: smashmc
+      REPO_USERNAME:
+        from_secret: reposilite_username
+      REPO_PASSWORD:
+        from_secret: reposilite_password
+    commands:
+      - echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd"><servers><server><id>'$REPO_ID'</id><username>'$REPO_USERNAME'</username><password>'$REPO_PASSWORD'</password></server></servers></settings>' > settings.xml
+
+  - name: Build & Test
+    image: maven:3.8.4-openjdk-17
+    commands:
+      - mvn verify -B -V -gs settings.xml
+
+  - name: Upload to Mario
+    image: appleboy/drone-scp
+    settings:
+      host: mario.smashmc.eu
+      username:
+        from_secret: mario_username
+      key:
+        from_secret: mario_key
+      port: 22334
+      target: /tmp/cicd/$DRONE_COMMIT
+      source: target/*.jar
+    when:
+      branch:
+        - main
+      event:
+        - push
+
+  - name: Copy to template
+    image: appleboy/drone-ssh
+    settings:
+      host: mario.smashmc.eu
+      username:
+        from_secret: mario_username
+      key:
+        from_secret: mario_key
+      port: 22334
+      script:
+        - cp -rf /tmp/cicd/$DRONE_COMMIT/target/* /global-server-template/plugins
+    when:
+      branch:
+        - main
+      event:
+        - push

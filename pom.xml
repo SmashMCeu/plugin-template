@@ -110,5 +110,7 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
+		<!-- Final jar without version for CICD  -->
+		<finalName>${artifactId}</finalName>
 	</build>
 </project>
