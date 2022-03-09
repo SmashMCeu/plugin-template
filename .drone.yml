@@ -6,7 +6,7 @@ steps:
   - name: Setup Maven
     image: alpine:latest
     environment:
-      REPO_ID: smashmc
+      REPO_ID: smashmc-private
       REPO_USERNAME:
         from_secret: reposilite_username
       REPO_PASSWORD:
