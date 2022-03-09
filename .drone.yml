@@ -31,7 +31,7 @@ steps:
       key:
         from_secret: mario_key
       port: 22334
-      target: /tmp/cicd/$DRONE_COMMIT
+      target: /tmp/cicd/${DRONE_COMMIT}
       source: target/*.jar
     when:
       branch:
@@ -49,7 +49,8 @@ steps:
         from_secret: mario_key
       port: 22334
       script:
-        - cp -rf /tmp/cicd/$DRONE_COMMIT/target/* /global-server-template/plugins/
+        - cp -f /tmp/cicd/${DRONE_COMMIT}/target/* /global-server-template/plugins/
+        - rm -r /tmp/cicd/${DRONE_COMMIT}
     when:
       branch:
         - main
