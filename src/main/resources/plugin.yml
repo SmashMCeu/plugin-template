@@ -1,4 +1,4 @@
-main: eu.smashmc.example.ExamplePlugin
+main: ${bukkit.main}
 name: ${project.name}
 version: ${project.version}
 description: ${project.description}
