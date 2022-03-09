@@ -26,7 +26,7 @@
 		<!-- Uncomment to use private repo (Required for Smashlib)  -->
 		<!--
 		<repository>
-			<id>smashmc</id>
+			<id>smashmc-private</id>
 			<url>https://repo.smashmc.eu/smashmc</url>
 		</repository>
 		-->
