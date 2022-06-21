@@ -50,8 +50,8 @@
 		</dependency>
 		-->
 		<dependency>
-			<groupId>dev.cobblesword.nachospigot</groupId>
-			<artifactId>api</artifactId>
+			<groupId>com.hpfxd.pandaspigot</groupId>
+			<artifactId>pandaspigot-api</artifactId>
 			<version>1.8.8-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
