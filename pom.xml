@@ -9,13 +9,13 @@
 
 	<properties>
 		<bukkit.main>eu.smashmc.example.ExamplePlugin</bukkit.main>
+		<smash-lib.version>1.6.12</smash-lib.version>
+		<smash-api.version>1.10-SNAPSHOT</smash-api.version>
+		<lombok.version>1.18.24</lombok.version>
 		<maven.compiler.target>17</maven.compiler.target>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<lombok.version>1.18.22</lombok.version>
-		<smash-api.version>LATEST</smash-api.version>
-		<smash-lib.version>LATEST</smash-lib.version>
 	</properties>
 
 	<repositories>
