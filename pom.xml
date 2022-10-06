@@ -9,7 +9,7 @@
 
 	<properties>
 		<bukkit.main>eu.smashmc.example.ExamplePlugin</bukkit.main>
-		<smash-lib.version>1.6.12</smash-lib.version>
+		<smash-lib.version>1.6.13</smash-lib.version>
 		<smash-api.version>1.10-SNAPSHOT</smash-api.version>
 		<lombok.version>1.18.24</lombok.version>
 		<maven.compiler.target>17</maven.compiler.target>
