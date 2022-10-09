@@ -50,8 +50,8 @@
 		</dependency>
 		-->
 		<dependency>
-			<groupId>com.hpfxd.pandaspigot</groupId>
-			<artifactId>pandaspigot-api</artifactId>
+			<groupId>eu.smashmc.curryspigot</groupId>
+			<artifactId>api</artifactId>
 			<version>1.8.8-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
