@@ -10,8 +10,8 @@
 
 	<properties>
 		<bukkit.main>eu.smashmc.example.ExamplePlugin</bukkit.main>
-		<maven.compiler.target>17</maven.compiler.target>
-		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<smash-lib.version>1.6.15</smash-lib.version>
