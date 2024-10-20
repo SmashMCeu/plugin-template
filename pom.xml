@@ -22,7 +22,7 @@
 			<id>smashmc-public</id>
 			<url>https://repo.smashmc.eu/public</url>
 		</repository>
-		<!-- Uncomment to use private repo (Required for Smashlib)  -->
+		<!-- Uncomment to use private repo (Required for smash-lib)  -->
 		<!--
 		<repository>
 			<id>smashmc-private</id>
@@ -32,7 +32,7 @@
 	</repositories>
 
 	<dependencies>
-		<!-- Uncomment to use Smashlib in project  -->
+		<!-- Uncomment to use smash-lib in project  -->
 		<!--
 		<dependency>
 			<groupId>eu.smashmc</groupId>
@@ -41,11 +41,5 @@
 			<scope>provided</scope>
 		</dependency>
 		-->
-		<dependency>
-			<groupId>eu.smashmc.curryspigot</groupId>
-			<artifactId>api</artifactId>
-			<version>1.8.8-R0.1-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 </project>
