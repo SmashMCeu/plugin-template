@@ -9,7 +9,7 @@
 
 	<parent>
 		<groupId>eu.smashmc</groupId>
-		<artifactId>parent</artifactId>
+		<artifactId>plugin-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
