@@ -18,6 +18,10 @@
 	</properties>
 
 	<repositories>
+		<repository>
+			<id>smashmc-public</id>
+			<url>https://repo.smashmc.eu/public</url>
+		</repository>
 		<!-- Uncomment to use private repo (Required for Smashlib)  -->
 		<!--
 		<repository>
