@@ -1,9 +1,9 @@
-package eu.smashmc.example;
+package eu.smashmc.sekai;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ExamplePlugin extends JavaPlugin {
+public class SekaiPlugin extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
