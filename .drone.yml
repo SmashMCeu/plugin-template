@@ -15,7 +15,7 @@ steps:
       - echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd"><servers><server><id>'$REPO_ID'</id><username>'$REPO_USERNAME'</username><password>'$REPO_PASSWORD'</password></server></servers></settings>' > settings.xml
 
   - name: Build & Test
-    image: maven:3.9.6-eclipse-temurin-21-alpine
+    image: maven:3.9.11-eclipse-temurin-25-alpine
     commands:
       - mvn verify -B -V -gs settings.xml
 
