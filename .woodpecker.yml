@@ -31,7 +31,7 @@ steps:
       key:
         from_secret: mario_key
       port: 22334
-      target: /tmp/cicd/${CI_PIPELINE_STARTED}
+      target: /tmp/cicd/${CI_COMMIT_SHA}
       source: target/*.jar
 
   - name: Copy to template
@@ -44,5 +44,5 @@ steps:
         from_secret: mario_key
       port: 22334
       script:
-        - cp -f /tmp/cicd/${CI_PIPELINE_STARTED}/target/* /global-server-template/plugins/
-        - rm -r /tmp/cicd/${CI_PIPELINE_STARTED}
+        - cp -f /tmp/cicd/${CI_COMMIT_SHA}/target/* /global-server-template/plugins/
+        - rm -r /tmp/cicd/${CI_COMMIT_SHA}
