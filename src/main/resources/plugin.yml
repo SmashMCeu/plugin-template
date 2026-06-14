@@ -2,5 +2,5 @@ main: ${bukkit.main}
 name: ${project.name}
 version: ${project.version}
 description: ${project.description}
-author: SmashMc
+Author: SmashMC
 softdepend: [SmashCore]
